@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="3" verbose="10" name="Custom Suite" annotations="JDK" parallel="tests">
+         
+  <test name="expressScripts">
+	 <classes>
+	   <class name="com.expressscripts.test.ExpressScriptsMemRegister"/>
+	 </classes>
+   </test>
+   
+  <test name="facebook">
+     <classes>
+       <class name="com.fb.tests.FbHomePageLink"/>
+       <class name="com.fb.tests.LoginExplicit"/>
+       <class name="com.fb.tests.LoginTest"/>
+       <class name="com.fb.tests.SignUpTest"/>
+     </classes>
+   </test>
+   <test name="ourTest">
+     <packages>
+            <package name="com.first.test.*"/>
+        </packages>
+   </test>
+</suite>

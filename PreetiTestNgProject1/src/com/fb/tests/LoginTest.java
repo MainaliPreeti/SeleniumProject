@@ -38,7 +38,7 @@ public class LoginTest {
 	
 	
 
-	@Test
+	@Test(groups = { "group2" })
   public void failedLogin() {
 		webDriver.findElement(By.id("email")).sendKeys("test@Test.com");
 		webDriver.findElement(By.name("pass")).sendKeys("test123");
@@ -52,7 +52,7 @@ public class LoginTest {
 	
 	
 	
-	@Test
+	@Test(groups = { "group1","group2" })
 	public void failedRandomUserId(){
 		webDriver.findElement(By.name("email")).sendKeys("erereeere@drere.dfd");
 		webDriver.findElement(By.id("pass")).sendKeys("pass223232");
