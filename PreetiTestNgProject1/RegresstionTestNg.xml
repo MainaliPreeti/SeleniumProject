@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="1" verbose="1" name="Regression Suite" annotations="JDK" parallel="tests">
+    <!-- create two groups group 1 and group2 -->  
+      <test name="regression">
+      	<groups>		
+   			<run>		
+    			<include name="group1" />	
+    			<include name="group2" />	
+   			</run>		
+  		</groups>	
+  		<classes>
+     		<class name="com.expressscripts.test.ExpressScriptsMemRegister" />
+     		<class name="com.fb.tests.LoginTest" />
+     		<class name="com.first.test.FirstTest" />
+   		</classes>  
+      </test> 
+   
+</suite>

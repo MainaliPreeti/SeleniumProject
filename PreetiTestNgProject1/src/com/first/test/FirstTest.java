@@ -16,7 +16,7 @@ public class FirstTest {
 	    String driverPath = "F:\\PreetiTrainingMaterials\\geckodriver-v0.20.1-win64\\geckodriver.exe";
 	    public WebDriver driver ; 
 	
-	    @Test
+	    @Test(groups = { "group1" })	
 	    public void verifyHomepageTitle() {
 	        String expectedTitle = "Welcome: Mercury Tours";
 	        String actualTitle = driver.getTitle();
@@ -43,7 +43,7 @@ public class FirstTest {
 	    	Assert.fail();
 	    }
 	    
-	    @Test(priority = 1)
+	    @Test(priority = 1,groups = { "group2" })
 	    public void trueTest(){
 	    	Assert.assertTrue(Boolean.TRUE);
 	    }

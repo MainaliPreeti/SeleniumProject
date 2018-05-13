@@ -30,7 +30,7 @@ public class ExpressScriptsMemRegister {
 		webDriver.quit();
 		
 	}
-	@Test
+	@Test(groups = { "group1" })	
 	public void register(){
 	webDriver.findElement(By.name("firstName")).sendKeys("nkjgkjgkjkg");
 	webDriver.findElement(By.name("lastName")).sendKeys("kkkkkkkk");
