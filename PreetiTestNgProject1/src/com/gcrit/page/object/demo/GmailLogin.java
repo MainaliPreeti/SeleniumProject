@@ -6,9 +6,9 @@ import org.openqa.selenium.WebDriver;
 public class GmailLogin {
  WebDriver webdriver;
  By email= By.name("identifier");
- By next=By.className("RveJvd snByac");
+ By next=By.xpath("//div[@id='identifierNext']//div[@class='ZFr60d CeoRYc']");
  By password=By.name("password");
- By next1=By.className("CwaK9");
+ By next1=By.xpath("//div[@id='passwordNext']//content[@class='CwaK9']");
  
  public GmailLogin(WebDriver webdriver){
 	 this.webdriver=webdriver;
